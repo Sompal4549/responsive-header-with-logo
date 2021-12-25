@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100&display=swap');
+*{font-family: Open Sans;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+outline: 0;
+transition: all .2s linear;
+}
+html{
+    font-size: 60%;
+    ::-webkit-scrollbar{
+        width: 1rem;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: #000;
+    }
+    ::-webkit-scrollbar-track{
+        background: transparent;
+    }
+}
+body{
+    padding-top: 10rem;
+}
+
+    #menu-btn{top: 1rem;
+        right: 2rem; position: fixed; height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2rem; background: green;
+        color: white;
+        cursor: pointer;
+        text-align:center;
+        z-index: 10000000000;
+        display:none;
+    }
+    header{
+        position: fixed;
+        overflow: hidden;
+        width: 100vw;
+        height: 20rem;
+        background-color: turquoise;
+        top: 0;
+        z-index: 10000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 width: 30%;
+                font-size: 2rem; 
+                text-align: center;
+                float: left;
+                a{
+                    color: yellow;
+                    &:hover{
+                        color: white;
+                    }
+                }
+                img{
+                    width: 8rem;
+                    background-color: black;
+                    height: 6rem;
+                    margin-left: .5rem;
+                }  
+            }
+        nav{
+            float: left;
+            a{
+                font-size: 2rem;
+                padding-left: .5rem;
+                color: yellowgreen;
+                text-align: center;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        .form{
+            float: left;
+            display: flex; flex-wrap: wrap;
+            width: 30%;
+            input{
+                width: 45%;
+                size: 20;
+                padding: .3rem;
+                margin-right: .5rem;
+                border-radius: 10px;
+                float: left;
+                background-color: rgb(216, 198, 175);
+                border: 2px groove rgb(83, 77, 77);
+                height: 4rem;
+            }
+            button{
+                width: 50%;
+                border-radius: 10px;
+                background-color: rgb(176, 185, 189);
+                outline: 2px solid red;
+                float: left;
+            }
+        }
+    }
+    @media (max-width:600px){
+        html{
+            font-size: 50%;
+        }
+        body{
+            padding-top: 30rem;
+        }
+        header{
+            width: 100vw;
+            height:20rem;
+            display: block;
+            .logo{
+                height: 6rem;
+                display: block;
+                align-items: center;
+                width: 50vw;
+                padding: 1.5rem;
+                margin: 0;
+                clear: both;
+                
+                img{
+                    width: 40vw;
+                }
+            }
+            nav{
+                height: 7rem;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+                width: 50vw;
+                padding: 0;
+                margin: 0;
+                
+                
+                a{
+                    width: 100vw;
+                    display: block;
+                }
+            }
+            .form{
+               float: left;
+                width: 100%;
+                height: 100%;
+                margin: .5rem;
+                left: 0;
+                display: flex;
+              justify-content: space-between;
+              align-items: center;
+             button{
+                 margin: .5rem;
+                 height: 4vh;
+             }
+             input{
+                 margin: .5rem;
+             }
+            }
+        }
+    }

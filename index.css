@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100&display=swap");
+* {
+  font-family: Open Sans;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 60%;
+}
+html ::-webkit-scrollbar {
+  width: 1rem;
+}
+html ::-webkit-scrollbar-thumb {
+  background: #000;
+}
+html ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body {
+  padding-top: 10rem;
+}
+
+#menu-btn {
+  top: 1rem;
+  right: 2rem;
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: green;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  z-index: 10000000000;
+  display: none;
+}
+
+header {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 20rem;
+  background-color: turquoise;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 2rem;
+  text-align: center;
+  float: left;
+}
+header .logo a {
+  color: yellow;
+}
+header .logo a:hover {
+  color: white;
+}
+header .logo img {
+  width: 8rem;
+  background-color: black;
+  height: 6rem;
+  margin-left: 0.5rem;
+}
+header nav {
+  float: left;
+}
+header nav a {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  color: yellowgreen;
+  text-align: center;
+}
+header nav a:hover {
+  color: white;
+}
+header .form {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+header .form input {
+  width: 45%;
+  size: 20;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  float: left;
+  background-color: #d8c6af;
+  border: 2px groove #534d4d;
+  height: 4rem;
+}
+header .form button {
+  width: 50%;
+  border-radius: 10px;
+  background-color: #b0b9bd;
+  outline: 2px solid red;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding-top: 30rem;
+  }
+
+  header {
+    width: 100vw;
+    height: 20rem;
+    display: block;
+  }
+  header .logo {
+    height: 6rem;
+    display: block;
+    align-items: center;
+    width: 50vw;
+    padding: 1.5rem;
+    margin: 0;
+    clear: both;
+  }
+  header .logo img {
+    width: 40vw;
+  }
+  header nav {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    padding: 0;
+    margin: 0;
+  }
+  header nav a {
+    width: 100vw;
+    display: block;
+  }
+  header .form {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .form button {
+    margin: 0.5rem;
+    height: 4vh;
+  }
+  header .form input {
+    margin: 0.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */
